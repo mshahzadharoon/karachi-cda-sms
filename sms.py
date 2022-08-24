@@ -8,9 +8,10 @@ import string
 pd.options.mode.chained_assignment = None
 
 #data = pd.read_csv('C:/Users/User/Desktop/SMS_data1.csv')
-path = 'C:/Users/User/Karachi ai/Class5/Assignment/SMS_data.csv'
+#path = 'C:/Users/User/Karachi ai/Class5/Assignment/SMS_data.csv'
 #with open(path, encoding="utf8", errors='ignore') as data:
-data = pd.read_csv(path,encoding="ISO-8859-1")
+#data = pd.read_csv(path,encoding="ISO-8859-1")
+data = pd.read_csv('SMS_data1.csv')
 
 ####*******####
 data["text_lower"] = data["Message_body"].str.lower()
