@@ -11,7 +11,7 @@ pd.options.mode.chained_assignment = None
 #path = 'C:/Users/User/Karachi ai/Class5/Assignment/SMS_data.csv'
 #with open(path, encoding="utf8", errors='ignore') as data:
 #data = pd.read_csv(path,encoding="ISO-8859-1")
-data = pd.read_csv('SMS_data.csv')
+data = pd.read_csv('SMS_data.csv',encoding="ISO-8859-1")
 
 ####*******####
 data["text_lower"] = data["Message_body"].str.lower()
