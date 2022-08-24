@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 
 
 #data = pd.read_csv(path,encoding="ISO-8859-1")
-data = pd.read_csv('SMS_data.csv')
+data = pd.read_csv('SMS_data.csv',encoding="ISO-8859-1")
 
 ##***Message Count Received**##
 msg_count = data.groupby('Date_Received')['Message_body'].count().sort_values(ascending=False)    
